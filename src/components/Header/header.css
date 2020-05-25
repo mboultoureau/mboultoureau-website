@@ -1,0 +1,160 @@
+header {
+    position: fixed;
+    z-index: 11;
+}
+
+nav {
+    transition: opacity 0.5s;
+    display: none;
+}
+
+.displayed {
+    display: flex;
+    animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+nav ul {
+    background-color: rgba(120, 0, 195, 0.9);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 1.7em;
+    margin: 15px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a::after {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    nav {
+        display: flex;
+    }
+
+    nav ul {
+        background-color: #280050;
+        flex-direction: row;
+        height: 70px;
+        right: 10px;
+        width: 100vw;
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        font-size: 1.3em;
+    }
+
+    nav ul li:last-of-type {
+        margin-right: 30px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+.menu-icon {
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+.menu-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.menu-icon span::before,
+.menu-icon span::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateY(-9px);
+    transition: transform 0.5s;
+}
+
+.menu-icon span::after {
+    transform: translateY(9px);
+}
+
+.menu-icon:hover span::before {
+    transform: translateY(-12px);
+}
+
+.menu-icon:hover span::after {
+    transform: translateY(12px);
+}
+
+.menu-icon.is-opened {
+    transition: transform 0.5s;
+    transform: rotate(180deg);
+}
+
+.menu-icon.is-opened span {
+    background: transparent;
+    transition: background 0.5s;
+}
+
+.menu-icon.is-opened span::before,
+.menu-icon.is-opened span::after {
+    transform-origin: 50% 50%;
+}
+
+.menu-icon.is-opened span::before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.menu-icon.is-opened span::after {
+    transform: translateY(0) rotate(-45deg);
+}

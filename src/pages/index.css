@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'american_captain';
+    src: url('../fonts/american_captain/american_captain.woff2') format('woff2'),
+        url('../fonts/american_captain/american_captain.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #280050;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+    font-family: 'american_captain', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+}

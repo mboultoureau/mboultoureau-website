@@ -1,0 +1,140 @@
+/* CONTACT */
+#contact {
+    padding-top: 100px;
+    height: 100vh;
+    min-height: 500px;
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#contact .content > form,
+#contact .content > div {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+/* SOCIAL */
+#contact .content > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact h3 {
+    font-family: 'american_captain', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    display: none;
+    margin: 10px 0;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#contact .social-medias,
+#contact .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#contact .social-medias p,
+#contact .email p {
+    display: none;
+}
+
+#content .content {
+    display: flex;
+}
+
+#contact .social a {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+#contact svg {
+    fill: #fff;
+    height: 45px;
+    width: 45px;
+}
+
+#contact .social-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* FORM */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact form input,
+#contact form textarea {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    font-size: 1.3em;
+    border-radius: 1.5em;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 550px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact form textarea {
+    border-radius: 1em;
+    height: 200px;
+    resize: vertical;
+}
+
+#contact form input[type='submit'] {
+    background: none;
+    color: #fff;
+    border: 3px solid #fff;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background 0.5s, color 0.5s;
+}
+
+#contact form input[type='submit']:hover {
+    background: #fff;
+    color: #280050;
+}
+
+@media (min-width: 900px) {
+    #contact h3 {
+        display: block;
+    }
+
+    #contact .content {
+        flex-direction: row;
+    }
+
+    #contact .content .social {
+        border-right: 5px solid #fff;
+    }
+
+    #contact .social-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contact .social-medias p,
+    #contact .email p {
+        display: block;
+    }
+}
