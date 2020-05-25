@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mathis Boultoureau</title>
+        <meta
+            name="description"
+            content="Je suis Mathis Boultoureau, étudiant
+        en informatique."
+        />
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
+
+    <body>
+        <!-- NAVBAR -->
+        <header>
+            <input type="checkbox" id="menu-button" />
+            <label for="menu-button">
+                <span></span>
+            </label>
+            <p>Mathis Boultoureau</p>
+            <a href="cv.pdf"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        d="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z"
+                    />
+                </svg>
+            </a>
+            <nav>
+                <a href="#">Mathis Boultoureau</a>
+                <div>
+                    <ul>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#experience">Parcours</a></li>
+                        <li><a href="#culture">Culture</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="cv.pdf" class="button">Télécharger mon CV</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <img src="img/profile-picture.min.png" alt="Mathis Boultoureau" />
+            <div>
+                <h1>Je suis Mathis Boultoureau</h1>
+                <p>
+                    &gt;
+                    <span id="typewriter"
+                        ><noscript
+                            >Futur ingénieur logiciel / sécurité</noscript
+                        ></span
+                    >
+                </p>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projets</h2>
+            <div>
+                <article>
+                    <a
+                        href="https://codepen.io/mboultoureau/full/gOYrPaE"
+                        target="_blank"
+                    >
+                        <img
+                            src="/img/random-quote-machine.min.png"
+                            alt="Générateur de citations"
+                        />
+                        <div>
+                            <p>Générateur de citations</p>
+                            <p>
+                                Ce générateur de citations m'a permis de mettre
+                                en pratique mon apprentissage en autodictate de
+                                React et l'utilisation de diverses API.
+                            </p>
+                            <ul>
+                                <li>React</li>
+                                <li>JavaScript</li>
+                                <li>Web</li>
+                            </ul>
+                        </div></a
+                    >
+                </article>
+                <article>
+                    <a
+                        href="https://github.com/mboultoureau/coding-challenges/tree/master/04_Pong"
+                        target="_blank"
+                    >
+                        <img src="/img/pong.min.png" alt="Pong" />
+                        <div>
+                            <p>Pong</p>
+                            <p>
+                                Codé en autodictate, ce projet m'a permis de
+                                découvrir l'utilisation d'une bibliothèque
+                                graphique en C++.
+                            </p>
+                            <ul>
+                                <li>C++</li>
+                                <li>SFML</li>
+                            </ul>
+                        </div></a
+                    >
+                </article>
+                <article>
+                    <a
+                        href="https://github.com/ronanren/site-ppp"
+                        target="_blank"
+                    >
+                        <img
+                            src="/img/fitech.min.png"
+                            alt="Fitech - Site sur l'informatique et la santé"
+                        />
+                        <div>
+                            <p>Fitech</p>
+                            <p>
+                                Ce site web sur le thème de l'informatique et de
+                                la santé a été développé en équipe dans le cadre
+                                de la journée de présentation devant des
+                                professionnels en première année de DUT
+                                Informatique. Notre site a été sélectionné pour
+                                être présenté grâce à un design sobre mais
+                                moderne et un mode sombre. Il nous a appris à
+                                nous organiser et travailler efficacement en
+                                équipe.
+                            </p>
+                            <ul>
+                                <li>Web</li>
+                                <li>Travail d'équipe</li>
+                            </ul>
+                        </div></a
+                    >
+                </article>
+            </div>
+            <a
+                href="https://github.com/mboultoureau"
+                class="button"
+                target="_blank"
+                >Voir tous mes projets sur Github</a
+            >
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Compétences</h2>
+
+            <div>
+                <!-- ALGORITHMIQUE -->
+                <article>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M23 10.826v2.349c-1.562 0-3 1.312-3 2.857 0 2.181 1.281 5.968-6 5.968v-2.002c4.917 0 3.966-1.6 3.966-3.967 0-2.094 1.211-3.5 2.278-4.031-1.067-.531-2.278-1.438-2.278-3.312 0-2.372.94-4.692-3.966-4.686v-2.002c7.285 0 6 4.506 6 6.688 0 1.544 1.438 2.138 3 2.138zm-19-2.138c0-2.182-1.285-6.688 6-6.688v2.002c-4.906-.007-3.966 2.313-3.966 4.686 0 1.875-1.211 2.781-2.278 3.312 1.067.531 2.278 1.938 2.278 4.031 0 2.367-.951 3.967 3.966 3.967v2.002c-7.281 0-6-3.787-6-5.969 0-1.545-1.438-2.857-3-2.857v-2.349c1.562.001 3-.593 3-2.137z"
+                            />
+                        </svg>
+                        <p>Algorithmique</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- WEB -->
+                <article>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M13.144 8.171c-.035-.066.342-.102.409-.102.074.009-.196.452-.409.102zm-2.152-3.072l.108-.031c.064.055-.072.095-.051.136.086.155.021.248.008.332-.014.085-.104.048-.149.093-.053.066.258.075.262.085.011.033-.375.089-.304.171.096.136.824-.195.708-.176.225-.113.029-.125-.097-.19-.043-.215-.079-.547-.213-.68l.088-.102c-.206-.299-.36.362-.36.362zm13.008 6.901c0 6.627-5.373 12-12 12-6.628 0-12-5.373-12-12s5.372-12 12-12c6.627 0 12 5.373 12 12zm-8.31-5.371c-.006-.146-.19-.284-.382-.031-.135.174-.111.439-.184.557-.104.175.567.339.567.174.025-.277.732-.063.87-.025.248.069.643-.226.211-.381-.355-.13-.542-.269-.574-.523 0 0 .188-.176.106-.166-.218.027-.614.786-.614.395zm6.296 5.371c0-1.035-.177-2.08-.357-2.632-.058-.174-.189-.312-.359-.378-.256-.1-1.337.597-1.5.254-.107-.229-.324.146-.572.008-.12-.066-.454-.515-.605-.46-.309.111.474.964.688 1.076.201-.152.852-.465.992-.038.268.804-.737 1.685-1.251 2.149-.768.694-.624-.449-1.147-.852-.275-.211-.272-.66-.55-.815-.124-.07-.693-.725-.688-.813l-.017.166c-.094.071-.294-.268-.315-.321 0 .295.48.765.639 1.001.271.405.416.995.748 1.326.178.178.858.914 1.035.898.193-.017.803-.458.911-.433.644.152-1.516 3.205-1.721 3.583-.169.317.138 1.101.113 1.476-.029.433-.37.573-.693.809-.346.253-.265.745-.556.925-.517.318-.889 1.353-1.623 1.348-.216-.001-1.14.36-1.261.007-.094-.256-.22-.45-.353-.703-.13-.248-.015-.505-.173-.724-.109-.152-.475-.497-.508-.677-.002-.155.117-.626.28-.708.229-.117.044-.458.016-.656-.048-.354-.267-.646-.53-.851-.389-.299-.188-.537-.097-.964 0-.204-.124-.472-.398-.392-.564.164-.393-.44-.804-.413-.296.021-.538.209-.813.292-.346.104-.7-.082-1.042-.125-1.407-.178-1.866-1.786-1.499-2.946.037-.19-.114-.542-.048-.689.158-.352.48-.747.762-1.014.158-.15.361-.112.547-.229.287-.181.291-.553.572-.781.4-.325.946-.318 1.468-.388.278-.037 1.336-.266 1.503-.06 0 .038.191.604-.019.572.433.023 1.05.749 1.461.579.211-.088.134-.736.567-.423.262.188 1.436.272 1.68.069.15-.124.234-.93.052-1.021.116.115-.611.124-.679.098-.12-.044-.232.114-.425.025.116.055-.646-.354-.218-.667-.179.131-.346-.037-.539.107-.133.108.062.18-.128.274-.302.153-.53-.525-.644-.602-.116-.076-1.014-.706-.77-.295l.789.785c-.039.025-.207-.286-.207-.059.053-.135.02.579-.104.347-.055-.089.09-.139.006-.268 0-.085-.228-.168-.272-.226-.125-.155-.457-.497-.637-.579-.05-.023-.764.087-.824.11-.07.098-.13.201-.179.311-.148.055-.287.126-.419.214l-.157.353c-.068.061-.765.291-.769.3.029-.075-.487-.171-.453-.321.038-.165.213-.68.168-.868-.048-.197 1.074.284 1.146-.235.029-.225.046-.487-.313-.525.068.008.695-.246.799-.36.146-.168.481-.442.724-.442.284 0 .223-.413.354-.615.131.053-.07.376.087.507-.01-.103.445.057.489.033.104-.054.684-.022.594-.294-.1-.277.051-.195.181-.253-.022.009.34-.619.402-.413-.043-.212-.421.074-.553.063-.305-.024-.176-.52-.061-.665.089-.115-.243-.256-.247-.036-.006.329-.312.627-.241 1.064.108.659-.735-.159-.809-.114-.28.17-.509-.214-.364-.444.148-.235.505-.224.652-.476.104-.178.225-.385.385-.52.535-.449.683-.09 1.216-.041.521.048.176.124.104.324-.069.19.286.258.409.099.07-.092.229-.323.298-.494.089-.222.901-.197.334-.536-.374-.223-2.004-.672-3.096-.672-.236 0-.401.263-.581.412-.356.295-1.268.874-1.775.698-.519-.179-1.63.66-1.808.666-.065.004.004-.634.358-.681-.153.023 1.247-.707 1.209-.859-.046-.18-2.799.822-2.676 1.023.059.092.299.092-.016.294-.18.109-.372.801-.541.801-.505.221-.537-.435-1.099.409l-.894.36c-1.328 1.411-2.247 3.198-2.58 5.183-.013.079.334.226.379.28.112.134.112.712.167.901.138.478.479.744.74 1.179.154.259.41.914.329 1.186.108-.178 1.07.815 1.246 1.022.414.487.733 1.077.061 1.559-.217.156.33 1.129.048 1.368l-.361.093c-.356.219-.195.756.021.982 1.818 1.901 4.38 3.087 7.22 3.087 5.517 0 9.989-4.472 9.989-9.989zm-11.507-6.357c.125-.055.293-.053.311-.22.015-.148.044-.046.08-.1.035-.053-.067-.138-.11-.146-.064-.014-.108.069-.149.104l-.072.019-.068.087.008.048-.087.106c-.085.084.002.139.087.102z"
+                            />
+                        </svg>
+                        <p>Web</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript / Node.js</li>
+                            <li>React</li>
+                            <li>SASS</li>
+                            <li>Bootstrap</li>
+                            <li>CMS</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- SYSTEMS -->
+                <article>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M20.581 19.049c-.55-.446-.336-1.431-.907-1.917.553-3.365-.997-6.331-2.845-8.232-1.551-1.595-1.051-3.147-1.051-4.49 0-2.146-.881-4.41-3.55-4.41-2.853 0-3.635 2.38-3.663 3.738-.068 3.262.659 4.11-1.25 6.484-2.246 2.793-2.577 5.579-2.07 7.057-.237.276-.557.582-1.155.835-1.652.72-.441 1.925-.898 2.78-.13.243-.192.497-.192.74 0 .75.596 1.399 1.679 1.302 1.461-.13 2.809.905 3.681.905.77 0 1.402-.438 1.696-1.041 1.377-.339 3.077-.296 4.453.059.247.691.917 1.141 1.662 1.141 1.631 0 1.945-1.849 3.816-2.475.674-.225 1.013-.879 1.013-1.488 0-.39-.139-.761-.419-.988zm-9.147-10.465c-.319 0-.583-.258-1-.568-.528-.392-1.065-.618-1.059-1.03 0-.283.379-.37.869-.681.526-.333.731-.671 1.249-.671.53 0 .69.268 1.41.579.708.307 1.201.427 1.201.773 0 .355-.741.609-1.158.868-.613.378-.928.73-1.512.73zm1.665-5.215c.882.141.981 1.691.559 2.454l-.355-.145c.184-.543.181-1.437-.435-1.494-.391-.036-.643.48-.697.922-.153-.064-.32-.11-.523-.127.062-.923.658-1.737 1.451-1.61zm-3.403.331c.676-.168 1.075.618 1.078 1.435l-.31.19c-.042-.343-.195-.897-.579-.779-.411.128-.344 1.083-.115 1.279l-.306.17c-.42-.707-.419-2.133.232-2.295zm-2.115 19.243c-1.963-.893-2.63-.69-3.005-.69-.777 0-1.031-.579-.739-1.127.248-.465.171-.952.11-1.343-.094-.599-.111-.794.478-1.052.815-.346 1.177-.791 1.447-1.124.758-.937 1.523.537 2.15 1.85.407.851 1.208 1.282 1.455 2.225.227.871-.71 1.801-1.896 1.261zm6.987-1.874c-1.384.673-3.147.982-4.466.299-.195-.563-.507-.927-.843-1.293.539-.142.939-.814.46-1.489-.511-.721-1.555-1.224-2.61-2.04-.987-.763-1.299-2.644.045-4.746-.655 1.862-.272 3.578.057 4.069.068-.988.146-2.638 1.496-4.615.681-.998.691-2.316.706-3.14l.62.424c.456.337.838.708 1.386.708.81 0 1.258-.466 1.882-.853.244-.15.613-.302.923-.513.52 2.476 2.674 5.454 2.795 7.15.501-1.032-.142-3.514-.142-3.514.842 1.285.909 2.356.946 3.67.589.241 1.221.869 1.279 1.696l-.245-.028c-.126-.919-2.607-2.269-2.83-.539-1.19.181-.757 2.066-.997 3.288-.11.559-.314 1.001-.462 1.466zm4.846-.041c-.985.38-1.65 1.187-2.107 1.688-.88.966-2.044.503-2.168-.401-.131-.966.36-1.493.572-2.574.193-.987-.023-2.506.431-2.668.295 1.753 2.066 1.016 2.47.538.657 0 .712.222.859.837.092.385.219.709.578 1.09.418.447.29 1.133-.635 1.49zm-8-13.006c-.651 0-1.138-.433-1.534-.769-.203-.171.05-.487.253-.315.387.328.777.675 1.281.675.607 0 1.142-.519 1.867-.805.247-.097.388.285.143.382-.704.277-1.269.832-2.01.832z"
+                            />
+                        </svg>
+                        <p>Systèmes</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Linux</li>
+                            <li>MacOS</li>
+                            <li>Windows</li>
+                            <li>Bash</li>
+                            <li>AWK</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- DATABASES -->
+                <article>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M12.008 0c-4.225 0-10.008 1.001-10.008 4.361v15.277c0 3.362 6.209 4.362 10.008 4.362 3.783 0 9.992-1.001 9.992-4.361v-15.278c0-3.361-5.965-4.361-9.992-4.361zm0 2c3.638 0 7.992.909 7.992 2.361 0 1.581-5.104 2.361-7.992 2.361-3.412.001-8.008-.905-8.008-2.361 0-1.584 4.812-2.361 8.008-2.361zm7.992 17.386c0 1.751-5.104 2.614-7.992 2.614-3.412 0-8.008-1.002-8.008-2.614v-2.04c2.117 1.342 5.17 1.78 8.008 1.78 2.829 0 5.876-.438 7.992-1.78v2.04zm0-4.873c0 1.75-5.104 2.614-7.992 2.614-3.412-.001-8.008-1.002-8.008-2.614v-2.364c2.116 1.341 5.17 1.78 8.008 1.78 2.839 0 5.881-.442 7.992-1.78v2.364zm-7.992-2.585c-3.426 0-8.008-1.006-8.008-2.614v-2.371c2.117 1.342 5.17 1.78 8.008 1.78 2.829 0 5.876-.438 7.992-1.78v2.372c0 1.753-5.131 2.613-7.992 2.613z"
+                            />
+                        </svg>
+                        <p>Base de données</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>SQL</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- MANAGEMENT -->
+                <article>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M21 3c0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.323.861 2.433 2.05 2.832.168 4.295-2.021 4.764-4.998 5.391-1.709.36-3.642.775-5.052 2.085v-7.492c1.163-.413 2-1.511 2-2.816 0-1.657-1.343-3-3-3s-3 1.343-3 3c0 1.305.837 2.403 2 2.816v12.367c-1.163.414-2 1.512-2 2.817 0 1.657 1.343 3 3 3s3-1.343 3-3c0-1.295-.824-2.388-1.973-2.808.27-3.922 2.57-4.408 5.437-5.012 3.038-.64 6.774-1.442 6.579-7.377 1.141-.425 1.957-1.514 1.957-2.803zm-16.8 0c0-.993.807-1.8 1.8-1.8s1.8.807 1.8 1.8-.807 1.8-1.8 1.8-1.8-.807-1.8-1.8zm3.6 18c0 .993-.807 1.8-1.8 1.8s-1.8-.807-1.8-1.8.807-1.8 1.8-1.8 1.8.807 1.8 1.8zm10.2-16.2c-.993 0-1.8-.807-1.8-1.8s.807-1.8 1.8-1.8 1.8.807 1.8 1.8-.807 1.8-1.8 1.8z"
+                            />
+                        </svg>
+                        <p>Gestion</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Git</li>
+                            <li>UML</li>
+                            <li>Gestion de projets</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- PERSONAL SKILLS -->
+                <article>
+                    <div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M20.822 18.096c-3.439-.794-6.64-1.49-5.09-4.418 4.72-8.912 1.251-13.678-3.732-13.678-5.082 0-8.464 4.949-3.732 13.678 1.597 2.945-1.725 3.641-5.09 4.418-3.073.71-3.188 2.236-3.178 4.904l.004 1h23.99l.004-.969c.012-2.688-.092-4.222-3.176-4.935z"
+                            />
+                        </svg>
+                        <p>Compétences personnelles</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Travail d'équipe</li>
+                            <li>Autodictate</li>
+                            <li>Curieux</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <div class="formation">
+                <h2>Formation</h2>
+                <article>
+                    <div class="border"></div>
+                    <div>
+                        <p class="title">
+                            Diplôme universitaire de technologie en informatique
+                        </p>
+                        <p class="date">2019 - Aujourd’hui</p>
+                    </div>
+                    <p class="lieu">
+                        Institut Universitaire de Technologie de Lannion (22)
+                    </p>
+                    <ul>
+                        <li>
+                            Algorithmique : Java, C, Python, structures de
+                            données
+                        </li>
+                        <li>Système : Linux, Bash, AWK, Sed</li>
+                        <li>Web : HTML/CSS, JavaScript, Bootstrap, CMS</li>
+                        <li>Base de données : SQL, PostgreSQL</li>
+                        <li>Gestion : UML, gestion de projets</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <div class="border"></div>
+                    <div>
+                        <p class="title">
+                            Baccalauréat Scientifique Mention Bien
+                        </p>
+                        <p class="date">2016 - 2019</p>
+                    </div>
+                    <p class="lieu">
+                        Lycée Saint Esprit, Landivisiau (29)
+                    </p>
+                    <ul>
+                        <li>Option mathématique</li>
+                        <li>Option section européenne</li>
+                        <li>Obtention du Cambridge English Certificate</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="experience">
+                <h2>Expériences</h2>
+                <article>
+                    <div class="border"></div>
+                    <div>
+                        <p class="title">
+                            Équipier polyvalent chez McDonald's
+                        </p>
+                        <p class="date">2018 - 2019</p>
+                    </div>
+                    <p class="lieu">
+                        McDonald’s - Landivisiau (29) - CDI 1 an
+                    </p>
+                    <ul>
+                        <li>Cuisine et préparatifs</li>
+                        <li>Service à table</li>
+                        <li>
+                            Acquis :
+                            <ul>
+                                <li>Rapidité</li>
+                                <li>Maîtrise du stress</li>
+                                <li>Ponctualité</li>
+                                <li>Rigueur</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- CULTURE -->
+        <section id="culture">
+            <h2>Culture</h2>
+            <div>
+                <a
+                    href="https://play.euw.leagueoflegends.com/fr_FR"
+                    class="lol"
+                    target="_blank"
+                >
+                    <img src="img/lol.min.png" alt="League of Legends" />
+                </a>
+                <a
+                    href="https://www.netflix.com/title/80057281"
+                    class="stranger-things"
+                    target="_blank"
+                >
+                    <img
+                        src="img/stranger-things.min.png"
+                        alt="Stranger Things"
+                    />
+                </a>
+                <a
+                    href="https://www.firewatchgame.com/"
+                    class="firewatch"
+                    target="_blank"
+                >
+                    <img src="img/firewatch.min.png" alt="Firewatch" />
+                </a>
+                <a
+                    href="https://www.youtube.com/channel/UCiP2tOO8zRo47GFd5rc8rkA"
+                    class="angele"
+                    target="_blank"
+                >
+                    <img src="img/angele.min.png" alt="Angèle" />
+                </a>
+                <a
+                    href="https://www.netflix.com/title/80117470"
+                    class="thirteen-reasons-why"
+                    target="_blank"
+                >
+                    <img
+                        src="img/13-reasons-why.min.png"
+                        alt="13 reasons why"
+                    />
+                </a>
+                <a
+                    href="https://open.spotify.com/artist/2nszamLjZFgu3Yx77mKxuC"
+                    class="unkle"
+                    target="_blank"
+                >
+                    <img src="img/unkle.min.png" alt="Unkle" />
+                </a>
+                <a href="https://www.ffjudo.com/" class="judo" target="_blank">
+                    <img src="img/judo.min.png" alt="Judo" />
+                </a>
+                <a
+                    href="https://www.root-me.org/mboultoureau-275653"
+                    class="root-me"
+                    target="_blank"
+                >
+                    <img src="img/root-me.min.png" alt="Root-me" />
+                </a>
+                <a
+                    href="https://www.youtube.com/channel/UCw6eCoyUf6sOa5L6fouZO4w"
+                    class="therapie-taxi"
+                    target="_blank"
+                >
+                    <img src="img/therapie-taxi.min.png" alt="Thérapie Taxi" />
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div>
+                <h3>Suivez-moi sur mes réseaux sociaux</h3>
+                <div>
+                    <a
+                        href="https://www.root-me.org/mboultoureau-275653"
+                        target="_blank"
+                        ><img src="img/root-me.min.jpg" alt="Root Me"
+                    /></a>
+                    <a
+                        href="https://www.freecodecamp.org/mathisboultoureau"
+                        target="_blank"
+                        ><img src="img/freecodecamp.min.png" alt="freeCodeCamp"
+                    /></a>
+                    <a href="https://github.com/mboultoureau" target="_blank"
+                        ><img src="img/github.min.png" alt="Github"
+                    /></a>
+                    <a href="https://codepen.io/mboultoureau" target="_blank"
+                        ><img
+                            alt="Codepen"
+                            src="data:image/png;base64,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"
+                    /></a>
+                    <a href="mailto:contact@mboultoureau.com" target="_blank">
+                        <img alt="Mail" src="img/mail.min.png" />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/mboultoureau/"
+                        target="_blank"
+                        ><img src="img/linkedin.min.png" alt="Linkedin"
+                    /></a>
+                    <a
+                        href="http://www.viadeo.com/fr/profile/mboultoureau"
+                        target="_blank"
+                        ><img src="img/viadeo.min.png" alt="Viadeo"
+                    /></a>
+                </div>
+                <hr />
+                <div class="form">
+                    <h3>Envoyez-moi un message</h3>
+                    <form
+                        name="contact"
+                        method="post"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                    >
+                        <input type="hidden" name="form-name" value="contact" />
+                        <input type="hidden" name="bot-field" />
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Nom"
+                            aria-label="Nom"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Adresse électronique"
+                            aria-label="Adresse électronique"
+                            required
+                        />
+                        <textarea
+                            name="message"
+                            placeholder="Message"
+                            aria-label="Message"
+                            required
+                        ></textarea>
+                        <input
+                            type="submit"
+                            value="Envoyer"
+                            class="button pink"
+                        />
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Créé par Mathis Boultoureau</p>
+        </footer>
+
+        <!--build:js js/main.min.js -->
+        <script src="js/script.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
