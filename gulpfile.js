@@ -77,5 +77,11 @@ async function pdf() {
     gulp.src("*.pdf").pipe(gulp.dest("dist"));
 }
 
-exports.default = gulp.series(html, css, img, pdf, serve, watch);
-exports.build = gulp.series(html, css, pdf, img);
+async function internal() {
+    gulp.src("favicon.ico").pipe(gulp.dest("dist"));
+    gulp.src("robots.txt").pipe(gulp.dest("dist"));
+    gulp.src("sitemap.xml").pipe(gulp.dest("dist"));
+}
+
+exports.default = gulp.series(html, css, img, pdf, internal, serve, watch);
+exports.build = gulp.series(html, css, pdf, internal, img);
