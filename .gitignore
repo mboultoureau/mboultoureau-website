@@ -127,3 +127,6 @@ Icon
 
 # Gulp
 dist/
+
+# Node
+package-lock.json
