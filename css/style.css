@@ -695,6 +695,10 @@ footer {
     flex-wrap: wrap;
 }
 
+#contact form div {
+    margin: 0;
+}
+
 #contact a {
     display: block;
     margin: 10px;
